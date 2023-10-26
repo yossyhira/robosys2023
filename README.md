@@ -13,6 +13,13 @@ python 3.10.12
 git clone git@github.com:yossyhira/robosys2023.git
 ```
 
+## 使い方
+
+```bash
+$ seq 10 | ./plus
+55
+```
+
 ## ライセンス
 * このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．
   
