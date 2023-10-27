@@ -12,8 +12,10 @@ python 3.10.12
 ```
 git clone git@github.com:yossyhira/robosys2023.git
 ```
+## plusコードで出来ること
+標準出力から読み込んだ数値を足す
 
-## 使い方
+## 使用方法
 
 ```bash
 $ seq 10 > nums
