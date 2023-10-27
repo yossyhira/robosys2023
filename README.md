@@ -16,6 +16,12 @@ git clone git@github.com:yossyhira/robosys2023.git
 ## 使い方
 
 ```bash
+$ seq 10 > nums
+$ ./plus < nums
+55
+```
+
+```bash
 $ seq 10 | ./plus
 55
 ```
