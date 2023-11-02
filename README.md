@@ -1,12 +1,15 @@
 # robosys2023
+[![test](https://github.com/yossyhira/robosys2023/actions/workflows/test.yml/badge.svg)](https://github.com/yossyhira/robosys2023/actions/workflows/test.yml)
 千葉工業大学未来ロボティクス学科 2023年度 ロボットシステム学で使用するリポジトリ
 
 ## 動作環境
-### 動作テスト済み　
+### 必要なソフトウェア　
 
-ubuntu 22.04.2 LTS
+* python 
+  * テスト済み：3.7 ~ 3.10
 
-python 3.10.12
+###テスト環境
+* ubuntu 22.04.2 LTS
 
 ## インストール方法
 下記のコードをホームディレクトリでクローンしてください
