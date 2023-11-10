@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+#SPDX-FileCopyrightText: 2023 Yoshitaka Hirata
+#SPDX-License-Indentifier: BSD-3-Clause
+
 import sys 
 
 ans = 0
