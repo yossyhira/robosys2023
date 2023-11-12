@@ -15,11 +15,11 @@ out=$(./japanes_holiday 1/1)
 ### 変なインプット###
 
 out=$(./japanes_holiday1/1)
-  [ "$?" > 0 ]      || ng ${LINENO}
+  [ "$?" = 127 ]      || ng ${LINENO}
   [ "${out}" = "" ] || ng ${LINENO}
 
  out=$(./japanes_holiday )
-  [ "$?" > 0 ]      || ng ${LINENO}
+  [ "$?" = 1 ]      || ng ${LINENO}
   [ "${out}" = "" ] || ng ${LINENO}
 
 out=$(./japanes_holiday 1月１日)
@@ -27,7 +27,11 @@ out=$(./japanes_holiday 1月１日)
   [ "${out}" = "その日付に対応する記念日は見つかりませんでした。" ] || ng ${LINENO}
  
  out=$(./japanes_holiday 01/01)
-  [ "$?" > 0 ]      || ng ${LINENO}
+  [ "$?" = 0 ]      || ng ${LINENO}
+  [ "${out}" = "その日付に対応する記念日は見つかりませんでした。" ] || ng ${LINENO}
+
+out=$(./japanes_holiday あ)
+  [ "$?" = 0 ]      || ng ${LINENO}
   [ "${out}" = "その日付に対応する記念日は見つかりませんでした。" ] || ng ${LINENO}
 
 [ "$ret" = 0 ] && echo OK
