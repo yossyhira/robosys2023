@@ -20,7 +20,11 @@ out=$(./japanes_holiday1/1)
 
  out=$(./japanes_holiday )
   [ "$?" > 0 ]      || ng ${LINENO}
-  [ "${out}" = "" ] || ng ${LINENO} 
+  [ "${out}" = "" ] || ng ${LINENO}
+
+out=$(./japanes_holiday 1月１日)
+  [ "$?" = 0 ]      || ng ${LINENO}
+  [ "${out}" = "その日付に対応する記念日は見つかりませんでした。" ] || ng ${LINENO}
 
 [ "$ret" = 0 ] && echo OK
 exit $ret
