@@ -12,5 +12,10 @@ out=$(./japanes_holiday 1/1)
 
 [ "${out}" = 元日、鉄腕アトムの日 ] || ng ${LINENO}
 
+### 変なインプット###
+
+out=$(./japanes_holiday1/1)
+  [ "$?" > 0 ]      || ng ${LINENO}
+  [ "${out}" = "" ] || ng ${LINENO}
 [ "$ret" = 0 ] && echo OK
 exit $ret
