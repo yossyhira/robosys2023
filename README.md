@@ -24,7 +24,7 @@ $ seq 10 | ./plus
 ## 使用方法
 
 ```bash
-$japanes_holiday 1/1
+$ japanes_holiday 1/1
 元日、鉄腕アトムの日
 ```
 
