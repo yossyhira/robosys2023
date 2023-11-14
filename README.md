@@ -29,7 +29,7 @@ $ ./japanes_holiday 1/1
 ```
 
 ```bash
-$ ./japanes_holiday today  <-11/14に入力した場合
+$ ./japanes_holiday today # <-11/14に入力した場合
 メンズバレンタインデー
 ```
 
