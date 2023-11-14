@@ -2,6 +2,7 @@
 #SPDX-FileCopyrightText: 2023 Yoshitaka Hirata
 #SPDX-License-Indentifier: BSD-3-Clause
 import sys
+import datetime
 
 def find_anniversary(date):
     with open('anniversaries.txt', 'r') as file:
@@ -12,8 +13,15 @@ def find_anniversary(date):
     return "入力形式が違います。日付を月/日の形式で入力してください。"
 
 def main():
-    date = sys.argv[1]
-    print(find_anniversary(date))
+
+    if sys.argv[1]==str("today"):
+        now = datetime.datetime.now()
+        date=(str(now.month)+str("/")+str(now.day))
+        print(find_anniversary(date))
+    
+    else:
+        date=sys.argv[1]
+        print(find_anniversary(date))
 
 if __name__ == "__main__":
     main()
