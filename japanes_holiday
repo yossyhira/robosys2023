@@ -10,7 +10,7 @@ def find_anniversary(date):
         for line in lines:
             if line.startswith(date):
                 return line.strip().split(',')[1]
-    return "入力形式が違います。日付を月/日の形式で入力してください。"
+    return "その日付は存在しないか日付の入力形式が違います。\n日付をtodayか月/日の形式で入力してください。"
 
 def main():
 
