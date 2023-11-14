@@ -24,15 +24,18 @@ out=$(./japanes_holiday1/1)
 
 out=$(./japanes_holiday 1月１日)
   [ "$?" = 0 ]      || ng ${LINENO}
-  [ "${out}" = "入力形式が違います。日付を月/日の形式で入力してください。" ] || ng ${LINENO}
+  [ "${out}" = "その日付は存在しないか日付の入力形式が違います。
+日付をtodayか月/日の形式で入力してください。" ] || ng ${LINENO}
  
  out=$(./japanes_holiday 01/01)
   [ "$?" = 0 ]      || ng ${LINENO}
-  [ "${out}" = "入力形式が違います。日付を月/日の形式で入力してください。" ] || ng ${LINENO}
+  [ "${out}" = "その日付は存在しないか日付の入力形式が違います。
+日付をtodayか月/日の形式で入力してください。" ] || ng ${LINENO}
 
 out=$(./japanes_holiday あ)
   [ "$?" = 0 ]      || ng ${LINENO}
-  [ "${out}" = "入力形式が違います。日付を月/日の形式で入力してください。" ] || ng ${LINENO}
+  [ "${out}" =  "その日付は存在しないか日付の入力形式が違います。
+日付をtodayか月/日の形式で入力してください。" ] || ng ${LINENO}
 
 [ "$ret" = 0 ] && echo OK
 exit $ret
