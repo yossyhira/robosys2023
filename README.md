@@ -46,7 +46,7 @@ git clone https://github.com/yossyhira/robosys2023.git
 ```
 
 ## コマンド使用までの手順
-次に㏅コマンドを使いrobosys2023ディレクトリに移動してください
+㏅コマンドを使いrobosys2023ディレクトリに移動してください
 ```
 cd robosys2023
 ```
