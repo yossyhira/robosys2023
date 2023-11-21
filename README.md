@@ -3,13 +3,13 @@
 
 千葉工業大学未来ロボティクス学科 2023年度 ロボットシステム学で使用するリポジトリ
 
-## このリポジトリで使用できるコード
+## このリポジトリで使用できるコマンド
 
 ・plus
 
 ・japanes_holiday
 
-## plusコードで出来ること
+## plusコマンドで出来ること
 標準入力から読み込んだ数値を足す
 
 ## 使用方法
@@ -24,7 +24,7 @@ $ ./plus < nums
 $ seq 10 | ./plus
 55
 ```
-## japanes_holidayコードで出来ること
+## japanes_holidayコマンドで出来ること
 標準入力から読み込んだ日付(月/日)に対応する記念日を調べる。また、標準入力にtodayと読み込ませるとその日の記念日を調べることができる。
 
 ## 使用方法
@@ -42,8 +42,16 @@ $ ./japanes_holiday today # <-11/14に入力した場合
 ## インストール方法
 下記のコードをホームディレクトリでクローンしてください
 ```
-git clone git@github.com:yossyhira/robosys2023.git
+git clone https://github.com/yossyhira/robosys2023.git
 ```
+
+## コマンド使用までの手順
+次に㏅コマンドを使いrobosys2023ディレクトリに移動してください
+```
+cd robosys2023
+```
+plusコマンドやjapanes_holidayコマンドを上記の方法で使用してください
+
 ## 動作環境
 ### 必要なソフトウェア　
 
